@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 // Custom import
-import Header from './components/header';
-import Footer from './components/footer';
-import Inputs from './components/todo_inputs';
-import TodoItem from './components/todo_items';
+import Header from './components/Header/header';
+import Footer from './components/Footer/footer';
+import Inputs from './components/TodoForm/todo_inputs';
+import TodoItem from './components/TodoItems/todo_items';
 
 class App extends Component {
   constructor(props) {
