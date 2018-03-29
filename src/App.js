@@ -3,10 +3,10 @@ import logo from './logo.svg';
 import './App.css';
 
 // Custom import
-import Header from './components/header';
-import Footer from './components/footer';
-import Inputs from './components/todo_inputs';
-import TodoItem from './components/todo_items';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import TodoInputs from './components/TodoInputs/TodoInputs';
+import TodoItems from './components/TodoItems/TodoItems';
 
 class App extends Component {
   constructor(props) {
@@ -45,11 +45,11 @@ class App extends Component {
         </header>
         <div id="todo-wrapper">
           <Header />
-          <Inputs TodoText="" addTodo={this.addTodo}/>
+          <TodoInputs TodoText="" addTodo={this.addTodo}/>
           <ul className="itemsWrapper">
             {
              this.state.todos.map((todo) => {
-                return <TodoItem todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
+                return <TodoItems todo={todo} key={todo.id} id={todo.id} removeTodo={this.removeTodo} />
              })
             }
           </ul>

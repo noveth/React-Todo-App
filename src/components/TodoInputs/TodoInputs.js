@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/todoInput.css';
+import '../../css/todoInput.css';
 
-export default class Todo_inputs extends React.Component {
+export default class TodoInputs extends React.Component {
 
 	constructor(props) {
 	    super(props);
